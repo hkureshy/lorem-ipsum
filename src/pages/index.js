@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
 
-class HomePage extends Component {
-  render() {
-    return(
+const HomePage = () => {
+  return(
+    <Layout>
       <h1>Home</h1>
-    );
-  }
+    </Layout>
+  );
 }
 
 export default HomePage;

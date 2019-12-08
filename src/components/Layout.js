@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet'
 
 import { useSiteMetadata } from '../lib/hooks'
 
+import '../styles/index.scss';
+
 function Layout(props) {
   const { title: defaultTitle, description: defaultDescription } = useSiteMetadata()
   const title = props.title || defaultTitle
