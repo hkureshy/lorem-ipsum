@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 
-export function AboutPageTemplate({}) {
+export const AboutPageTemplate = ({}) => {
   return (
     <>
       <h1>About Page</h1>
@@ -12,7 +12,7 @@ export function AboutPageTemplate({}) {
 
 AboutPageTemplate.propTypes = {}
 
-function AboutPage() {
+const AboutPage = () => {
   return (
     <Layout>
       <AboutPageTemplate />

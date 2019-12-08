@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
-function NotFoundPage() {
+const NotFoundPage = () => {
   return (
     <Layout title="Upss… Not Found">
       <section>

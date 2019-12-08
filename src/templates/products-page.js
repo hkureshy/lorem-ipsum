@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 
-export function ProductsPageTemplate({}) {
+export const ProductsPageTemplate = ({}) => {
   return (
     <>
       <h1>Products Page</h1>
@@ -12,7 +12,7 @@ export function ProductsPageTemplate({}) {
 
 ProductsPageTemplate.propTypes = {}
 
-function ProductsPage() {
+const ProductsPage = () => {
   return (
     <Layout>
       <ProductsPageTemplate />

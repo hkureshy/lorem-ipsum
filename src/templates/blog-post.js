@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 
-export function BlogPostTemplate({}) {
+export const BlogPostTemplate = ({}) => {
   return (
     <>
       <h1>Blog Post Page</h1>
@@ -12,7 +12,7 @@ export function BlogPostTemplate({}) {
 
 BlogPostTemplate.propTypes = {}
 
-function BlogPost() {
+const BlogPost = () => {
   return (
     <Layout>
       <BlogPostTemplate />
