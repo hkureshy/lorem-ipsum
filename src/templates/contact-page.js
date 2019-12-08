@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 
-export function ContactPageTemplate({}) {
+export const ContactPageTemplate = ({}) => {
   return (
     <>
       <h1>Contact Page</h1>
@@ -12,7 +12,7 @@ export function ContactPageTemplate({}) {
 
 ContactPageTemplate.propTypes = {}
 
-function ContactPage() {
+const ContactPage = () => {
   return (
     <Layout>
       <ContactPageTemplate />

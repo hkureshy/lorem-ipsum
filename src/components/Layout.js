@@ -5,7 +5,7 @@ import { useSiteMetadata } from '../lib/hooks'
 
 import '../styles/index.scss';
 
-function Layout(props) {
+const Layout = props => {
   const { title: defaultTitle, description: defaultDescription } = useSiteMetadata()
   const title = props.title || defaultTitle
   const description = props.description || defaultDescription

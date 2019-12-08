@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 
-export function IndexPageTemplate({}) {
+export const IndexPageTemplate = ({}) => {
   return (
     <>
       <h1>Index Page</h1>
@@ -12,7 +12,7 @@ export function IndexPageTemplate({}) {
 
 IndexPageTemplate.propTypes = {}
 
-function IndexPage() {
+const IndexPage = () => {
   return (
     <Layout>
       <IndexPageTemplate />
