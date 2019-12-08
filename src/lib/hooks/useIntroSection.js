@@ -13,7 +13,11 @@ const useIntroSection = () => {
                 description
                 heading
                 image {
-                  publicURL
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
                 }
               }
             }

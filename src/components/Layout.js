@@ -1,6 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
+import Header from './Header';
+import Footer from './Footer';
 import { useSiteMetadata } from '../lib/hooks'
 
 import '../styles/index.scss';
@@ -23,7 +25,9 @@ const Layout = props => {
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
       </Helmet>
+      <Header />
       <main>{props.children}</main>
+      <Footer />
     </div>
   )
 }
