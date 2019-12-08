@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Recrut Be',
+    title: 'Lorem Ipsum',
     description:
-      'simple business website using Gatsby and NetlifyCMS',
+      'Test Application for Bejamas',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -64,6 +64,18 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`600`]
+          }
+        ],
+      },
+    },
+    `gatsby-plugin-sass`,
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
