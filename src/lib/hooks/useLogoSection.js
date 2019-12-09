@@ -11,11 +11,7 @@ const useLogoSection = () => {
             frontmatter {
               logos {
                 image {
-                  childImageSharp {
-                    fluid {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
+                  publicURL
                 }
                 link
               }

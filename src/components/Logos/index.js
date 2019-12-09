@@ -9,8 +9,9 @@ import './logos.scss'
 
 const settings = {
   dots: false,
+  autoplay: true,
   infinite: true,
-  speed: 500,
+  autoplaySpeed: 2000,
   slidesToShow: 5,
   slidesToScroll: 1,
   responsive: [
@@ -40,13 +41,12 @@ const settings = {
 
 const Logos = () => {
   const images = useLogoSection();
-  // debugger
   return (
     <section className='my-3 logos-section'>
       <Container>
         <Slider {...settings}>
           { images.map((i, index) =>
-            <Img key={`logo-${index}`} src={i.image.childImageSharp.fluid} />
+            <img key={`logo-${index}`} src={i.image.publicURL} />
           )}
         </Slider>
       </Container>
