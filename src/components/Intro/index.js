@@ -8,7 +8,6 @@ import './intro.scss'
 
 const Intro = () => {
   const { heading, description, image: { childImageSharp } } = useIntroSection();
-  console.log(description)
   return (
     <section className='intro-section'>
       <h3 className='text-center'>{heading}</h3>

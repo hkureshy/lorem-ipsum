@@ -10,7 +10,13 @@ const useLogoSection = () => {
           nodes {
             frontmatter {
               logos {
-                image
+                image {
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
                 link
               }
             }
