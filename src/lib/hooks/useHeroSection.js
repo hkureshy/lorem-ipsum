@@ -13,7 +13,11 @@ const useHeroSection = () => {
                 heading
                 subheading
                 image {
-                  publicURL
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
                 }
               }
             }

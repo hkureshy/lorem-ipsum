@@ -10,7 +10,9 @@ const useLogoSection = () => {
           nodes {
             frontmatter {
               logos {
-                image
+                image {
+                  publicURL
+                }
                 link
               }
             }

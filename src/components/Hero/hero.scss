@@ -1,0 +1,34 @@
+.hero-section {
+  min-height: calc(100vh - 60px);
+  align-items: center;
+  section {
+    max-width: 50%;
+    color: #394E5D;
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      font-size: 22px;
+      font-weight: 200;
+    }
+  }
+  .image {
+    width: 383.5px;
+    max-height: 370.5px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .hero-section {
+    justify-content: center;
+    section {
+      max-width: 100%;
+      h2 {
+        color: #182333;
+      }
+      p {
+        color: #333;
+      }
+    }
+  }
+}
