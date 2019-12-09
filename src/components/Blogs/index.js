@@ -21,7 +21,6 @@ const Content = ({ frontmatter, frontmatter: { featuredimage: { childImageSharp 
 
 const Blogs = () => {
   const blogs = useBlogsSection();
-  // debugger
   return (
     <Container className='blogs-section'>
       <Row className='blog-row'>
