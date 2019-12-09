@@ -1,6 +1,11 @@
+@import '../../styles/index.scss';
+
 .hero-section {
   min-height: calc(100vh - 60px);
   align-items: center;
+  @include mobile {
+    padding-top: 70px;
+  }
   section {
     max-width: 50%;
     color: #394E5D;
