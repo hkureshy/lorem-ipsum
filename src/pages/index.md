@@ -21,7 +21,7 @@ intro:
 logos:
   - image: /uploads/component-1-–-1.svg
     link: /about
-  - image: /uploads/desk.jpg
+  - image: /uploads/component-1-–-1.svg
     link: 'https://example.com'
   - image: /uploads/component-1-–-1.svg
     link: 'https://example.com'
