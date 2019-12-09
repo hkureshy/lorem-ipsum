@@ -1,14 +1,82 @@
-.be-header {
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+@import '../../styles/index.scss';
+
+.be-header-desktop {
+  background: #fff 0% 0% no-repeat padding-box;
   box-shadow: 0px 2px 12px #0000001D;
+  padding: 0 15px;
+  @include mobile {
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .mobile-logo {
+    transform: translateX(-21px);
+    padding: 0;
+  }
+  .navbar-toggler {
+    border: none;
+    padding: 8px 10px;
+    outline: none !important;
+    box-shadow: none;
+    @include mobile {
+      margin-left: 10px;
+    }
+    .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: #394E5D;
+      @extend %transition;
+      &:first-child {
+        @include prefix (transform, translateY(6px) rotate(-45deg));
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:last-child {
+        @include prefix (transform, translateY(-6px) rotate(45deg));
+      }
+      &+.icon-bar {
+        margin-top: 4px;
+      }
+    }
+    &.collapsed {
+      .icon-bar {
+        @include prefix (transform, none);
+        &:nth-child(2) {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .nav-wrapper {
+    @include mobile {
+      height: calc(100vh - 72px);
+      padding-left: 20px;
+    }
+    .navbar-nav {
+      @include mobile {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
   a {
     color: #394E5D;
     font-weight: 600;
     height: 60px;
     line-height: 60px;
-    padding: 0 2rem;
     position: relative;
     overflow: hidden;
+    @include mobile {
+      padding-left: 15px !important;
+    }
+    @include min-tablet {
+      padding: 0 2rem !important;
+    }
     &::after {
       content: '';
       width: 10px;
@@ -20,6 +88,12 @@
       left: 50%;
       transform: translateX(-50%);
       opacity: 0;
+      @include mobile {
+        left: 0;
+        bottom: auto;
+        top: 49%;
+        transform: translateY(-50%);
+      }
     }
     &:hover {
       &::after {
@@ -33,3 +107,4 @@
     }
   }
 }
+
