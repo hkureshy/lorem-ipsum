@@ -19,15 +19,15 @@ intro:
   heading: Lorem ipsum something
   image: /uploads/56217.jpg
 logos:
-  - image: /uploads/test-image.jpg
+  - image: /uploads/logo.svg
     link: /about
-  - image: /uploads/test-image.jpg
+  - image: /uploads/logo.svg
     link: 'https://example.com'
-  - image: /uploads/test-image.jpg
+  - image: /uploads/logo.svg
     link: 'https://example.com'
-  - image: /uploads/test-image.jpg
+  - image: /uploads/logo.svg
     link: 'https://example.com'
-  - image: /uploads/test-image.jpg
+  - image: /uploads/logo.svg
     link: 'https://example.com'
 ---
 
