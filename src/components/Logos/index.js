@@ -1,9 +1,9 @@
 import React from 'react'
-import Img from 'gatsby-image'
 import Container from 'react-bootstrap/Container'
 import Slider from "react-slick";
 
 import { useLogoSection } from '../../lib/hooks'
+import PreviewCompatibleImage from '../../lib/PreviewCompatibleImage'
 
 import './logos.scss'
 
@@ -45,9 +45,13 @@ const Logos = () => {
     <section className='my-3 logos-section'>
       <Container>
         <Slider {...settings}>
-          { images.map((i, index) =>
-            <img key={`logo-${index}`} src={i.image.publicURL} />
-          )}
+          { images.map((i, index) => {
+            const imageInfo = {
+              alt: 'Slider',
+              image: i.image.publicURL
+            }
+            return <PreviewCompatibleImage key={`logo-${index}`} imageInfo={imageInfo} />
+          })}
         </Slider>
       </Container>
     </section>
