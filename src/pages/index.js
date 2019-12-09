@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import Intro from '../components/Intro';
 import Logos from '../components/Logos';
+import Blogs from '../components/Blogs';
 
 const HomePage = () => {
   return(
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Hero />
       <Intro />
       <Logos />
+      <Blogs />
     </Layout>
   );
 }

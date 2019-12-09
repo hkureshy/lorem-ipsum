@@ -13,10 +13,11 @@ const useBlogsSection = () => {
                 featuredimage {
                   childImageSharp {
                     fluid {
-                      src
+                      ...GatsbyImageSharpFluid
                     }
                   }
                 }
+                title
                 date
                 excerpt
               }
@@ -26,7 +27,7 @@ const useBlogsSection = () => {
       }
     `,
   )
-  return data.allMarkdownRemark.edges[0].node.frontmatter
+  return data.allMarkdownRemark.edges
 }
 
 export default useBlogsSection
