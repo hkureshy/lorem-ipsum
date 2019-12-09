@@ -98,15 +98,31 @@ collections:
         label: 'Footer'
         name: 'footer'
         fields:
-          - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'footer-area' }
-          - { label: 'alt', name: 'alt', widget: 'string' }
-          - { label: Footer Logo, name: footer_logo, widget: image }
+          - { label: 'Template Key', name: 'templateKey', default: 'footer-area' }
+          - {
+            label: Footer Logo,
+            name: logo,
+            widget: object,
+            fields:
+              [
+                { label: 'alt', name: 'alt', widget: 'string' },
+                { label: Footer Logo, name: footer_logo, widget: image },
+              ],
+          }
       - file: 'src/pages/header/index.md'
         label: 'Header'
         name: 'header'
         fields:
-          - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'header-area' }
-          - { label: 'alt', name: 'alt', widget: 'string' }
-          - { label: Header Logo, name: header_logo, widget: image }
+          - { label: 'Template Key', name: 'templateKey', default: 'header-area' }
+          - {
+            label: Header Logo,
+            name: logo,
+            widget: object,
+            fields:
+              [
+                { label: 'alt', name: 'alt', widget: 'string' },
+                { label: Header Logo, name: header_logo, widget: image }
+              ],
+          }
 
 
