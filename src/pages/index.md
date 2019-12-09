@@ -21,7 +21,7 @@ intro:
 logos:
   - image: /uploads/component-1-–-1.svg
     link: /about
-  - image: /uploads/heartland-fabrics-r1-1-pumpkin.jpg
+  - image: /uploads/desk.jpg
     link: 'https://example.com'
   - image: /uploads/component-1-–-1.svg
     link: 'https://example.com'
