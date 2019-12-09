@@ -3,6 +3,7 @@
 .hero-section {
   min-height: calc(100vh - 60px);
   align-items: center;
+  margin-top: 60px;
   @include mobile {
     padding-top: 70px;
   }

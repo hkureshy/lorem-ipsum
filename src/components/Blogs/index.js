@@ -1,5 +1,4 @@
 import React from 'react'
-import Img from 'gatsby-image'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -7,20 +6,30 @@ import Media from 'react-media';
 
 import Button from '../Button'
 import { useBlogsSection } from '../../lib/hooks'
+import PreviewCompatibleImage from '../../lib/PreviewCompatibleImage'
+import sortByDate from '../../lib/SortByDate'
 
 import './blogs.scss'
 
-const Content = ({ frontmatter, frontmatter: { featuredimage: { childImageSharp } } }) =>
-  <Col xs={12} sm={6} md={4} lg={3}>
-    <div className='be-card d-flex flex-column'>
-      <Img className='image' fluid={childImageSharp.fluid} />
-      <b>{frontmatter.title}</b>
-      <p>{frontmatter.excerpt}</p>
-    </div>
-  </Col>
+const Content = ({ frontmatter, frontmatter: { featuredimage: { childImageSharp } } }) => {
+  const imageInfo = {
+    alt: 'Blog',
+    childImageSharp
+  }
+  return (
+    <Col xs={12} sm={6} md={4} lg={3}>
+      <div className='be-card d-flex flex-column'>
+        <PreviewCompatibleImage style={{ marginBottom: 20 }} imageInfo={imageInfo} />
+        <b>{frontmatter.title}</b>
+        <p>{frontmatter.excerpt}</p>
+      </div>
+    </Col>
+  )
+}
 
 const Blogs = () => {
-  const blogs = useBlogsSection();
+  let blogs = useBlogsSection()
+  blogs = sortByDate(blogs)
   return (
     <Container className='blogs-section'>
       <Row className='blog-row'>
