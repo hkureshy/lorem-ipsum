@@ -1,4 +1,4 @@
 ---
-logo: /uploads/footer_logo.svg
+footer_logo: /uploads/footer_logo.svg
 ---
 
