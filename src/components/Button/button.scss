@@ -1,0 +1,13 @@
+.be-button {
+  height: 38px;
+  padding: 0 25px;
+  background: #fff;
+  border: 1px solid #3D86BF;
+  color: #3D86BF;
+  border-radius: 32px;
+  &:hover {
+    background: #3D86BF;
+    color: #fff;
+    transition: 1s;
+  }
+}

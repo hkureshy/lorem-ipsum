@@ -1,6 +1,9 @@
 .logos-section {
   background: #F5F8FA;
-  img:hover {
-    cursor: pointer;
+  img {
+    min-height: 145px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

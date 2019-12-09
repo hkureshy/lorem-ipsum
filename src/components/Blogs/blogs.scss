@@ -1,0 +1,31 @@
+.blogs-section {
+  margin: 100px auto;
+  .blog-row {
+    margin-bottom: 20px;
+  }
+  .be-card {
+    height: 100%;
+    .image {
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    b {
+      padding: 0 10px;
+      font-size: 20px;
+      color: #394E5D;
+    }
+    p {
+      margin-top: auto;
+      padding: 0 10px;
+      font-size: 16px;
+      color: #182333;
+    }
+    &:hover {
+      cursor: pointer;
+      border-radius: 4px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 2px 16px #394E5D36;
+      transition: 1s;
+    }
+  }
+}

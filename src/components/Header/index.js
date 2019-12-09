@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Nav className='justify-content-center be-header'>
       <Nav.Item>
-        <Nav.Link>Home</Nav.Link>
+        <Nav.Link active>Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link>Products</Nav.Link>
